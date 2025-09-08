@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIT Bhopal Campus Tour</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="navbarstyle.css">
+  <link rel="stylesheet" href="footerstyle.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header class="header" id="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="logo/Vit Bhopal Logo.png" alt="logo" width="100">
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <!-- Nav Links -->
+    <nav class="nav" id="navMenu">
+      <ul>
+        <li><a href="https://vitbhopal.ac.in/">Main Website</a></li>
+        <li><a href="Info.html">Information</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- Mid SECTION WITH VIDEO -->
+  <section class="Mid">
+    <video src="Drone_Background/videodrone.mp4" autoplay muted loop playsinline></video>
+    <div class="Mid-content">
+      <h1>Welcome to VIT Bhopal Campus Tour</h1>
+      <a class="tour-button" href="campus tour\app-files\tour.html">
+        Start 360° Campus Tour
+      </a>
+    </div>
+  
+
+
+  </section>
+<!-- ABOUT SECTION -->
+<section class="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About VIT Bhopal</h2>
+      <p>
+        Established in 2017, VIT Bhopal is spread over a huge campus of 250 acres located at Indore Highway, Bhopal. The campus has a unique integrated ‘Lecture and Laboratory’ learning platform which is the blackboard-less classroom. The university uses Collaborative and Active Learning Through Technology (CALTECH) and a Fully Flexible Credit System (FFCS) to facilitate the learning of students. Vellore Institute of Technology Bhopal organises various interactive sessions and seminars of industry experts with the help of partner universities and alumni.
+
+        VIT University Bhopal has also started an initiative called VTOP or VTOP Bhopal, which stands for VIT on Top. It is a digital initiative to access processes such as Academics, Research, and Supporting Services by Faculty, Staff, Students, Alumni, and Parents. VIT Bhopal courses are offered to students at the UG, PG, and PhD levels. The university is mainly concerned with streams such as Advanced Sciences, Languages, Bioengineering, Engineering, and Management. Further, the university offers 29 courses to students, including BTech, BSc, BCA, BBA, BArch, MBA, MTech, MCA, etc. As per the latest report, the highest package offered so far during VIT Bhopal placements in 2025 stood at INR 100 LPA.
+
+        The university has a panel of guest lecturers to inspire students in their respective careers and to give them tips and invaluable insights in every course. Most importantly, VIT Bhopal courses are provided to students at reasonable fees, to enable students to acquire knowledge and skills in their preferred area of interest. 
+      </p>
+      <p>
+        With a focus on innovation and research, we prepare leaders
+        for the next generation of technology and management.
+        <br>
+        <br>
+        <a href="https://www.shiksha.com/university/vit-bhopal-university-54374" class="shiksha-link" target="_blank">Reviewed By Shiksha </a>
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="Chancellor.png" alt="Chancellor" id="vishwanathansir">
+      <article><b><i>Dr. G Viswanathan
+Founder – Chancellor of VIT University</i></b></article>
+      <img src="logo/Vit Bhopal Logo.png" alt="VIT Bhopal Campus">
+    </div>
+    
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+  <!-- Enquiry section -->
+  <div class="Enquiry">
+    <h4>For enquiry and issues related VIT bhopal <br>Enter your email to clarify</h4>
+    <div class="subscribe-box">
+      <input type="email" placeholder="Enter your email">
+      <button>Send</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- columns below -->
+  <div class="footer-columns">
+    <div>
+      <img src="logo/Vit Bhopal Logo.png" alt="logo">
+      <h4>University Address</h4>
+      <p>VIT Bhopal University<br>
+      Bhopal-Indore Highway, Kothrikalan, Sehore<br>
+      Madhya Pradesh – 466114</p>
+
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="https://vitbhopal.ac.in" target="_blank">Main Website</a></li>
+        <li><a href="https://admission.vitbhopal.ac.in/">Admissions</a></li>
+        <li><a href="#">Campus Map</a></li>
+        <li><a href="https://vitbhopal.ac.in/gallery/">Gallery</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>About Us</h4>
+      <ul>
+        <li><a href="https://vitbhopal.ac.in/caltech-vit/">Our Story</a></li>
+        <li><a href="#">Mission and Values</a></li>
+        <li><a href="team.html">Team credits</a></li>
+      </ul>
+    </div>
+  </div>
+<hr>
+<h6>&#169; ALL COPYRIGHTS ARE TAKEN BY GROUP 1</h6>
+</footer>
+
+
+<script>
+  // Toggle menu open/close on mobile
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Scroll hide/show header
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    const navbar = document.getElementById("navbar");
+    if (prevScrollpos > currentScrollPos) {
+      navbar.style.top = "0";
+    } else {
+      navbar.style.top = "-60px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
+
+
+</body>
+</html>
